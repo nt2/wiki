@@ -50,7 +50,7 @@ Le routage des applications est administré par le conteneur Traefik.
 
 ### GitHub
 
-L'entièreté du code de NT2 [est hébergé sur GitHub](https://github.com/nt2). Chaque répertoire contient une liste de secrets et de variables défini dans Settings/Secrets and Variables/Actions. Ces secrets et variables sont ensuites utilisés par le script de déploiement `.github/workflows/deploy.yml` de chaque application.
+L'entièreté du code de NT2 [est hébergé sur GitHub](https://github.com/nt2). Chaque répertoire contient une liste de secrets et de variables défini dans Settings -> Secrets and Variables -> Actions. Ces secrets et variables sont ensuites utilisés par le script de déploiement `.github/workflows/deploy.yml` de chaque application.
 
 Pour déployer les extensions WordPress (submodules), il faut générer un token d'accès valide et l'enregistrer comme secret dans le répertoire. Ce token expire après 90 jours et est généré par un membre de l'organisation GitHub NT2.
 
