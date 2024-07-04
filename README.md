@@ -76,7 +76,7 @@ Le [conteneur traefik](https://github.com/nt2/traefik) sert de reverse-proxy à 
 
 Les applications WordPress de NT2 utilisent principalement l'extension [Advanced Custom Fields](https://www.advancedcustomfields.com/) pour créer le schéma de données et l'interface d'édition.
 
-Le type d'architecture utilisé étant headless (CMS découplé), l'extension [WPGraphQL](https://www.wpgraphql.com/) est utilisé pour gérer l'api GraphQL entre WordPress et la portion front-end Next.js. WPGraphQL comprend aussi un IDE intégré pour créer/tester les requêtes GraphQL.
+Le type d'architecture utilisé étant headless (CMS découplé), l'extension [WPGraphQL](https://www.wpgraphql.com/) est utilisé pour gérer l'api GraphQL entre WordPress et la portion front-end Next.js. WPGraphQL comprend aussi un IDE intégré pour créer et tester les requêtes GraphQL.
 
 L'extension [WP Migrate](https://deliciousbrains.com/wp-migrate-db-pro/) est utilisé pour les migrations WordPress.
 
@@ -84,13 +84,13 @@ L'extension [WP All Import](https://www.wpallimport.com/) est utilisé pour l'im
 
 ### Next.js
 
-Les applications récentes créé par NT2 utilisent le meta-framework Next.js (app router) pour la partie front-end du site.
+Les applications récentes créés par NT2 utilisent le meta-framework Next.js (app router) pour la partie front-end du site.
 
 En mode développement sur une machine locale, Next.js requiert d'avoir installé [node](https://formulae.brew.sh/formula/node), [pnpm](https://formulae.brew.sh/formula/pnpm) et bun (`brew install oven-sh/bun/bun`). Sur un ordinateur mac, ces outils peuvent être installés à l'aide de [homebrew](https://brew.sh/).
 
 `graphql-request` et `graphql-codegen` sont utilisés pour créer et typer le client graphql. la commande `npm run dev` démarre l'application localement et compile les types des requêtes GraphQL à chaque sauvegarde.
 
-`radix-ui` est utilisé pour créer des composantes intéractives et accessibles, comme des tabulations, des menus déroulants ou des fenêtres modales.
+`radix-ui` est utilisé pour créer des composantes intéractives et accessibles, comme les tabulations, les menus déroulants ou les fenêtres modales.
 
 `tailwindcss` est utilisé en tant que framework css pour la mise en page du site.
 
