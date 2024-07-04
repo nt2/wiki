@@ -68,7 +68,7 @@ Pour supprimer les images, les conteneurs et les volumes inactifs : `docker syst
 
 ### Traefik
 
-Le [conteneur traefik](https://github.com/nt2/traefik) sert de reverse-proxy à tous les autres conteneurs dans le network `web`. La configuration spécifique est écrite dans le fichier `traefik.yml`. Le fichier `docker-compose.yml` s'occupe de créer le volume letsencrypt `/var/www/data/traefik/letsencrypt:/letsencrypt` pour stocker en permanence les certificats SSL.
+Le [conteneur traefik](https://github.com/nt2/traefik) sert de reverse-proxy à tous les autres conteneurs dans le network `web`. La configuration se trouve dans le fichier `traefik.yml`. Le fichier `docker-compose.yml` s'occupe de créer le volume letsencrypt `/var/www/data/traefik/letsencrypt:/letsencrypt` pour stocker en permanence les certificats SSL.
 
 ## Applications
 
