@@ -74,7 +74,7 @@ Le [conteneur traefik](https://github.com/nt2/traefik) sert de reverse-proxy à 
 
 ### WordPress
 
-Les applications WordPress de NT2 utilisent principalement l'extension Advanced Custom Fields pour créer le schéma de données et l'interface d'édition.
+Les applications WordPress de NT2 utilisent principalement l'extension [Advanced Custom Fields](https://www.advancedcustomfields.com/) pour créer le schéma de données et l'interface d'édition.
 
 Le type d'architecture utilisé étant headless (CMS découplé), l'extension [WPGraphQL](https://www.wpgraphql.com/) est utilisé pour gérer l'api GraphQL entre WordPress et la portion front-end Next.js. WPGraphQL comprend aussi un IDE intégré pour créer/tester les requêtes GraphQL.
 
