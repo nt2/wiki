@@ -82,7 +82,7 @@ L'extension [WP All Import](https://www.wpallimport.com/) est utilisé pour l'im
 
 ### Next.js
 
-Le front-end des applications récentes créé par NT2 utilisent le meta-framework Next.js (app router).
+Les applications récentes créé par NT2 utilisent le meta-framework Next.js (app router) pour la partie front-end du site.
 
 En mode développement sur une machine locale, Next.js requiert d'avoir installé [node](https://formulae.brew.sh/formula/node), [pnpm](https://formulae.brew.sh/formula/pnpm) et bun (`brew install oven-sh/bun/bun`). Sur un ordinateur mac, ces outils peuvent être installés à l'aide de [homebrew](https://brew.sh/).
 
