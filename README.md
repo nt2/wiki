@@ -64,6 +64,8 @@ Pour visionner les logs d'un conteneur : `docker logs CONTAINER_ID`
 
 Pour ouvrir un terminal à l'intérieur d'un conteneur : `docker exec -it CONTAINER_ID sh`
 
+Pour supprimer les images, les conteneurs et les volumes inactifs : `docker system prune --volumes`
+
 ### Traefik
 
 Le [conteneur traefik](https://github.com/nt2/traefik) sert de reverse-proxy à tous les autres conteneurs dans le network `web`. La configuration spécifique est écrite dans le fichier `traefik.yml`. Le fichier `docker-compose.yml` s'occupe de créer le volume letsencrypt `/var/www/data/traefik/letsencrypt:/letsencrypt` pour stocker en permanence les certificats SSL.
