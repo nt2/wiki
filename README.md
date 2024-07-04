@@ -96,6 +96,6 @@ En mode développement sur une machine locale, Next.js requiert d'avoir install�
 
 `prettier` et `prettier-plugin-tailwindcss` sont utilisés pour formatter automatiquement le code à chaque sauvegarde.
 
-### Sites Statiques
+### Sites statiques
 
 Tous les sites statiques de NT2 sont hébergés dans le conteneur Nginx [static-sites](https://github.com/nt2/static-sites) dans la VM production.nt2.uqam.ca.
