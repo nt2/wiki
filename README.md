@@ -16,7 +16,7 @@ La base de données Notion rassemble les informations sur l'entièreté des site
 
 ### Gestionnaire de mots de passe
 
-Toutes les informations de connexions sont stockés dans le compte 1Password de NT2.
+Toutes les informations de connexion sont stockés dans le compte 1Password de NT2.
 
 ### Comptes courriel
 
