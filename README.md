@@ -95,3 +95,7 @@ En mode développement sur une machine locale, Next.js requiert d'avoir install�
 `tailwindcss` est utilisé en tant que framework css pour la mise en page du site.
 
 `prettier` et `prettier-plugin-tailwindcss` sont utilisés pour formatter automatiquement le code à chaque sauvegarde.
+
+### Sites Statiques
+
+Tous les sites statiques de NT2 sont hébergés dans le conteneur Nginx [static-sites](https://github.com/nt2/static-sites) dans la VM production.nt2.uqam.ca.
