@@ -102,7 +102,7 @@ Tous les sites statiques de NT2 sont hébergés dans le conteneur Nginx [static-
 
 Pour activer un site fossile sans domaine web, déposer le fichier du projet dans le dossier `archive`. Le site sera ensuite disponible à l'adresse archive.nt2.uqam.ca/nom-du-dossier. 
 
-Pour activer un site fossile avec un domaine uqam.ca, déposer le fichier du projet dans le dossier `custom-domains` et ajouter la règle suivante dans le fichier http.conf :
+Pour activer un site fossile avec un domaine uqam.ca, déposer le fichier du projet dans le dossier `custom-domains` et ajouter la règle suivante dans le fichier `http.conf` :
 
 ```
 server {
