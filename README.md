@@ -99,3 +99,21 @@ En mode développement sur une machine locale, Next.js requiert d'avoir install�
 ### Sites statiques
 
 Tous les sites statiques de NT2 sont hébergés dans le conteneur Nginx [static-sites](https://github.com/nt2/static-sites) dans la VM production.nt2.uqam.ca.
+
+Pour activer un site fossile sans domaine web, déposer le fichier du projet dans le dossier `archive`. Le site sera ensuite disponible à l'adresse archive.nt2.uqam.ca/nom-du-dossier. 
+
+Pour activer un site fossile avec un domaine uqam.ca, déposer le fichier du projet dans le dossier `custom-domains` et ajouter la règle suivante dans le fichier http.conf :
+
+```
+server {
+    listen 80;
+    server_name sous-domaine.uqam.ca;
+    root /usr/share/nginx/html/custom-domains/nom-du-dossier;
+    index index.html;
+}
+```
+À noter que chaque nouveau domaine doit être ajouté au label Traefik dans le fichier `docker-compose.yml` :
+
+```
+ - "traefik.http.routers.static-sites.rule=Host(`sous-domaine.uqam.ca`) || [...]"
+```
