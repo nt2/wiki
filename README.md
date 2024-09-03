@@ -115,5 +115,12 @@ server {
 À noter que chaque nouveau domaine doit être ajouté au label Traefik dans le fichier `docker-compose.yml` :
 
 ```
- - "traefik.http.routers.static-sites.rule=Host(`sous-domaine.uqam.ca`) || [...]"
+# example.com
+- "traefik.http.routers.example.rule=Host(`example.com`)"
+- "traefik.http.routers.example.middlewares=example"
+- "traefik.http.routers.example.entrypoints=websecure"
+- "traefik.http.routers.example.tls.certresolver=myresolver"
+- "traefik.http.middlewares.example.redirectregex.regex=^(http|https)://example.com/(.*)"
+- "traefik.http.middlewares.example.redirectregex.replacement=https://archive.nt2.uqam.ca/example/"
+- "traefik.http.middlewares.example.redirectregex.permanent=true"
 ```
